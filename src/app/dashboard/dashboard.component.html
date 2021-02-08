@@ -1,0 +1,16 @@
+<div class="main-container">
+    <header class="header">
+        <h4 style="margin-top: 1rem; color: antiquewhite; margin-left: 2rem;">Welcome to college Portal</h4>
+    </header>
+    <div class="content-container">
+        <div class="content-area">
+            <router-outlet></router-outlet>
+        </div>
+        <clr-vertical-nav>
+            <a clrVerticalNavLink routerLink="./default" routerLinkActive="active">Dashboard</a>
+            <a clrVerticalNavLink routerLink="./account" routerLinkActive="active">Account</a>
+            <a clrVerticalNavLink routerLink="./syllabus" routerLinkActive="active">Syllabus</a>
+            <a clrVerticalNavLink >Log out</a>
+        </clr-vertical-nav>
+    </div>
+</div>

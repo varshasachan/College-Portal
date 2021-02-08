@@ -1,0 +1,132 @@
+{
+  "posts": [
+    {
+      "id": 2,
+      "school": "Lynn Classical High School",
+      "board": "UP Board",
+      "medium": "Hindi",
+      "class": "8"
+    },
+    {
+      "id": 3,
+      "school": "South Anchorage HS",
+      "board": "ICSE Board",
+      "medium": "English",
+      "class": "6"
+    },
+    {
+      "id": 4,
+      "school": "Wasilla High School",
+      "board": "MP Board",
+      "medium": "Hindi",
+      "class": "5"
+    },
+    {
+      "id": 5,
+      "school": "Alabama School of Fine Arts",
+      "board": "ICSE Board",
+      "medium": "English",
+      "class": "9"
+    },
+    {
+      "id": 7,
+      "school": "Alma Bryant High School",
+      "board": "MP Board",
+      "medium": "Hindi",
+      "class": "12"
+    },
+    {
+      "id": 8,
+      "school": "American Christian Academy",
+      "board": "ICSE Board",
+      "medium": "English",
+      "class": "12"
+    },
+    {
+      "id": 9,
+      "school": "Bessemer Center for Technology",
+      "board": "ICSE Board",
+      "medium": "English",
+      "class": "8"
+    },
+    {
+      "id": 14,
+      "school": "Elmore County High School",
+      "board": "UP Board",
+      "medium": "Hindi",
+      "class": "12"
+    },
+    {
+      "id": 15,
+      "school": "Emmanuel Christian School",
+      "board": "ICSE Board",
+      "medium": "English",
+      "class": "11"
+    },
+    {
+      "id": 17,
+      "school": "Oakwood Adventist Academy",
+      "board": "ICSE Board",
+      "medium": "English",
+      "class": "8"
+    },
+    {
+      "id": 18,
+      "school": "Southern Academy",
+      "board": "Bihar Board",
+      "medium": "Hindi",
+      "class": "6"
+    },
+    {
+      "school": "BNSD",
+      "board": "UP",
+      "medium": "English",
+      "class": "7",
+      "id": 19
+    },
+    {
+      "school": "Carolina Universoty",
+      "board": "American state",
+      "medium": "English",
+      "class": "9",
+      "id": 20
+    },
+    {
+      "school": "Indian Universoty",
+      "board": "CBSE",
+      "medium": "English",
+      "class": "10",
+      "id": 21
+    }
+  ],
+  "syllabus": [
+    {
+      "id": 1,
+      "subject": "English",
+      "board": "UP Board",
+      "year": "2018-19",
+      "class": "8"
+    },
+    {
+      "id": 2,
+      "subject": "History",
+      "board": "CBSE Board",
+      "year": "2019-20",
+      "class": "9"
+    },
+    {
+      "id": 1,
+      "subject": "Geography",
+      "board": "ICSC Board",
+      "year": "2017-18",
+      "class": "10"
+    },
+    {
+      "subject": "",
+      "board": "",
+      "year": "",
+      "class": "",
+      "id": 3
+    }
+  ]
+}

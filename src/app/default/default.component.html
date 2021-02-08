@@ -1,0 +1,58 @@
+<clr-modal [(clrModalOpen)]="openModal">
+    <h3 class="modal-title">Add School Details</h3>
+    <div class="modal-body">
+        <form clrForm [formGroup]="addSchoolform">
+            <clr-input-container>
+                <label>School</label>
+                <input clrInput placeholder="Enter your School Name" formControlName="school" required [(ngModel)]="userObj.school"/>
+                <clr-control-error>You must provide your School name!</clr-control-error>
+            </clr-input-container>
+            <clr-input-container>
+                <label>Board</label>
+                <input clrInput placeholder="Enter your Board Name" formControlName="board" required [(ngModel)]="userObj.board"/>
+                <clr-control-error>You must provide your Board name!</clr-control-error>
+            </clr-input-container>
+            <clr-input-container>
+                <label>Medium</label>
+                <input clrInput placeholder="Enter your Medium Name" formControlName="medium" required [(ngModel)]="userObj.medium"/>
+                <clr-control-error>You must provide your Medium name!</clr-control-error>
+            </clr-input-container>
+            <clr-input-container>
+                <label>Class</label>
+                <input clrInput placeholder="Enter your Class Name" formControlName="class" required [(ngModel)]="userObj.class"/>
+                <clr-control-error>You must provide your Class name!</clr-control-error>
+            </clr-input-container>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-outline" (click)="openModal = false">Cancel</button>
+        <button type="button" class="btn btn-primary" *ngIf="!isEdit" (click)="addSchool()">Ok</button>
+        <button type="button" class="btn btn-primary" *ngIf="isEdit"  (click)="editSchoolwithid()">Update</button>
+    </div>
+</clr-modal>
+<button class="btn btn-primary" (click)="openSchool()">Add School Details</button>
+<clr-datagrid [clrDgLoading]="loading">
+    <clr-dg-column [clrDgField]="'school'" [clrDgSortOrder]="descSort">School Name</clr-dg-column>
+    <clr-dg-column [clrDgField]="'board'">Board</clr-dg-column>
+    <clr-dg-column [clrDgField]="'medium'">Medium</clr-dg-column>
+    <clr-dg-column [clrDgField]="'class'">Class</clr-dg-column>
+    <clr-dg-column>Action</clr-dg-column>
+
+    <clr-dg-row *clrDgItems="let x of schoolData">
+        <clr-dg-cell>{{x.school}}</clr-dg-cell>
+        <clr-dg-cell>{{x.board}}</clr-dg-cell>
+        <clr-dg-cell>{{x.medium}}</clr-dg-cell>
+        <clr-dg-cell>{{x.class}}</clr-dg-cell>
+        <clr-dg-cell>
+            <button class="btn btn-primary" (click)="editSchool(x)">Edit</button>
+            <button class="btn btn-danger" (click)="deleteSchool(x)">Delete</button>
+        </clr-dg-cell>
+    </clr-dg-row>
+
+    <clr-dg-footer>
+        <clr-dg-pagination #pagination [clrDgPageSize]="10">
+            {{pagination.firstItem + 1}} - {{pagination.lastItem + 1}}
+            of {{pagination.totalItems}} users
+        </clr-dg-pagination>
+    </clr-dg-footer>
+</clr-datagrid>

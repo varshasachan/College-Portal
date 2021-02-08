@@ -1,0 +1,58 @@
+<div class="clr-row">
+    <div class="clr-col-3">
+        <clr-select-container>
+            <label>Board</label>
+            <select clrSelect name="options">
+                <option value="UP Board">UP Board</option>
+                <option value="CBSE Board">CBSE Board</option>
+                <option value="ICSC Board">ICSC Board</option>
+
+            </select>
+        </clr-select-container>
+    </div>
+    <div class="clr-col-3">
+        <clr-select-container>
+            <label>Class</label>
+            <select clrSelect name="options" >
+                <option value="1">Class 1</option>
+                <option value="2">Class 2</option>
+                <option value="3">Class 3</option>
+                <option value="4">Class 4</option>
+                <option value="5">Class 5</option>
+                <option value="6">Class 6</option>
+                <option value="7">Class 7</option>
+                <option value="8">Class 8</option>
+                <option value="9">Class 9</option>
+                <option value="10">Class 10</option>
+                <option value="11">Class 11</option>
+                <option value="12">Class 12</option>
+            </select>
+        </clr-select-container>
+    </div>
+    <div class="clr-col-3">
+        <clr-select-container>
+            <label>Subject</label>
+            <select clrSelect name="options">
+                <option value="Physics">Physics</option>
+                <option value="Chemistry">Chemistry</option>
+                <option value="Biology">Biology</option>
+                <option value="English">English</option>
+                <option value="History">History</option>
+                <option value="Geography">Geography</option>
+            </select>
+        </clr-select-container>
+    </div>
+    <div class="clr-col-3">
+        <clr-select-container>
+            <label>Aacademic Year</label>
+            <select clrSelect name="options">
+                <option value="2017-18">2017-18</option>
+                <option value="2018-19">2018-19</option>
+                <option value="2019-20">2019-20</option>
+            </select>
+        </clr-select-container>
+    </div>
+</div>
+<br/><br/>
+
+<button class="btn btn-primary" (click)="submitSyllabus()">Submit</button>
